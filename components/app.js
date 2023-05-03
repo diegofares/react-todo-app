@@ -2,8 +2,6 @@ import Head from 'next/head'
 import { useState } from "react";
 import Header from "./header";
 import TaskList from "./tasksList";
-// import HouseList from "./houseList";
-// import House from "./house";
 
 const App = () => {
     // const [selectedHouse, setSelectedHouse] = useState();
@@ -34,16 +32,10 @@ const App = () => {
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"></link>
 
             </Head>
-            <Header appTitle="TODO App" onShowStarred={handleFilterStarred} onShowCompleted={handleShowCompleted} onShowPending={handleShowPending} showStarredOnly={showStarredOnly}/>
+            <Header appTitle="TODO App" onShowStarred={handleFilterStarred} onShowCompleted={handleShowCompleted} onShowPending={handleShowPending} showStarredOnly={showStarredOnly} />
             <main>
                 <TaskList listCompletedTasks={listCompletedTasks} showStarredOnly={showStarredOnly} />
             </main>
-            {/* <Banner headerText="Dynamic Header Text!!!" />
-            {selectedHouse ? (
-                <House house={selectedHouse} />
-            ) : (
-                <HouseList selectHouse={setSelectedHouse} />
-            )} */}
         </>
     );
 }
