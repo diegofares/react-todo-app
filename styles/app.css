@@ -1,0 +1,28 @@
+body {
+    color: rgb(var(--foreground-rgb));
+    background: #202124;
+    color: #e8eaed;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+header {
+    height: 70px;
+    border-bottom: 1px solid #e8eaed;
+}
+
+.row.taskItem {
+    border: 1px solid #e8eaed;
+    border-radius: 8px;
+}
+
+.row.taskItem:hover {
+    background-color: darkcyan;
+}
+
+.row.taskItem button {
+    border: none;
+    background: none;
+    color: rgb(255, 208, 0);
+
+}
