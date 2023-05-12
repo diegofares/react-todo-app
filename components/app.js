@@ -20,6 +20,9 @@ const App = () => {
         console.log("Star clicked");
         showStarredOnly ? setShowStarredOnly(false) : setShowStarredOnly(true);
     }
+    const openAddModal = () => {
+
+    }
 
     return (
         <>
@@ -34,7 +37,7 @@ const App = () => {
             </Head>
             <Header appTitle="TODO App" onShowStarred={handleFilterStarred} onShowCompleted={handleShowCompleted} onShowPending={handleShowPending} showStarredOnly={showStarredOnly} />
             <main>
-                <TaskList listCompletedTasks={listCompletedTasks} showStarredOnly={showStarredOnly} />
+                <TaskList listCompletedTasks={listCompletedTasks} showStarredOnly={showStarredOnly} />               
             </main>
         </>
     );

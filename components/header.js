@@ -8,14 +8,16 @@ const Header = ({ onShowStarred, onShowCompleted, onShowPending, showStarredOnly
                 </div>
             </div>
             <div className="row mt-4">
-                <div className="col-4">
-                    <button onClick={onShowStarred} className={showStarredOnly ? "btn btn-default btn-warning" : "btn btn-default btn-outline-warning"}>Show starred</button>
-                </div>
-                <div className="col-4">
-                    <button onClick={onShowPending} className="btn btn-default btn-primary">Pending Tasks</button>
-                </div>
-                <div className="col-4">
-                    <button onClick={onShowCompleted} className="btn btn-default btn-primary">Completed Tasks</button>
+                <div className="col-12">
+                    <button
+                        onClick={onShowStarred}
+                        className="btn"
+                    >
+                        <i className={showStarredOnly ? "bi-star-fill text-warning" : "bi-star text-warning"}></i>
+                    </button>
+                    <button onClick={onShowPending} className="btn btn-default btn-primary mx-1">Pending Tasks</button>
+                    <button onClick={onShowCompleted} className="btn btn-default btn-primary mx-1">Completed Tasks</button>
+
                 </div>
             </div>
 

@@ -4,11 +4,10 @@ body {
     color: #e8eaed;
     font-family: Roboto, Helvetica, sans-serif;
     font-weight: 500;
-}
-
-header {
-    height: 70px;
-    border-bottom: 1px solid #e8eaed;
+    header {
+        height: 70px;
+        border-bottom: 1px solid #e8eaed;
+    }
 }
 
 .row.taskItem {
@@ -24,5 +23,5 @@ header {
     border: none;
     background: none;
     color: rgb(255, 208, 0);
-
 }
+

@@ -1,4 +1,5 @@
-import '@/styles/app.css'
+import '@/styles/app.scss'
+import '@/styles/modal.scss'
 import type { AppProps } from 'next/app'
 import { Roboto } from 'next/font/google'
 
